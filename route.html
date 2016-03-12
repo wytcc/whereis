@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>whereis route</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="images/logo_small.png" />
+</head>
+<body>
+	<!-- Header -->
+	<header class="header" role="banner">
+		<div class="wrap">
+			<!-- Logo -->
+			<div href="index.html" title="whereis" class="logo"><span><img src="images/logo.png"></span> whereis</div>
+			<!-- //Logo -->
+
+			<!-- navigation -->
+			<nav class="main-nav" role="navigation">
+				<div class="jetmenu-wrapper">
+					<ul class="jetmenu" id="jetmenu">
+						<li style=""><a href="#" title="Book now" class="search-trigger">景点搜索</a></li>
+						<li style=""><a href="route.html" title="Services">旅行路线</a></li>
+						<li style=""><a href="near.html" title="Contact">周边查询</a></li>
+					</ul>
+				</div>
+				<!-- Search -->
+				<form class="advanced-search" action="searchresult.html" style="display: none;">
+					<div class="wrap">
+						<div >
+							<input type="text" id="keyword" placeholder="Search for...">
+						</div>
+						<div>
+							<input type="submit" id="as-submit" class="button gold full" value="搜索">
+						</div>
+					</div>
+				</form>
+				<!-- //Search -->
+			</nav>
+			<!-- //navigation -->
+		</div>
+	</header>
+	<!-- //Header -->
+
+	<main class="main" role="main">
+		<form action="route.html">
+			<div class="wrap near">
+				<div class="first-search">
+					<input type="text" id="keyword" placeholder="Search for...">
+				</div>
+				<div class="second-search">
+					<input type="submit" id="search" class="button gold full" value="查询">
+				</div>
+			</div>
+		</form>
+		<section class="white icons">
+			<div class="wrap">
+				<div class="routetitle">
+					北京
+				</div>
+				<div class="row">
+					<!-- Item -->
+					<div class="one-half wow fadeIn animated" style="visibility: visible; -webkit-animation: fadeIn;">
+						<img width="525" height="295" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://hiphotos.baidu.com/lvpics/pic/item/5d6034a85edf8db1190785c50923dd54564e7462.jpg"></img>
+					</div>
+					<!-- //Item -->
+
+					<!-- Item -->
+					<div class="one-half wow fadeIn animated" data-wow-delay=".4s" style="visibility: visible; -webkit-animation: fadeIn 0.4s;" id="content">
+						<div class="block-height">
+							<!-- name -->
+							<!-- <div class="name">
+								<h3><strong>北京</strong></h3>
+							</div> -->
+							<!-- //name -->
+
+							<!-- description -->
+							<div class="abstract">
+								<dl class="clearfix">
+									<!-- <dt>景点介绍</dt> -->
+									<dd class="text-indent">北京，中国首都。每个人心中，都有一个“我爱北京天安门”的北京情结，都曾梦想着生活在传说中的紫禁城；梦想着穿梭在王朔笔下的胡同和大院；也梦想着爬上万里长城，大喊：我是好汉！在每个人心中，都一个人属于自己的北京。 北京是一座包容万象、海纳百川的城市。三千年的历史，六朝故都，这里荟萃了自元明清以来的中华文化，荟萃了众多名胜古迹和人文景观。这里汇聚了八方来客，宗教、文化、语言在这里融合，兼容并蓄。如果想准确的描绘出北京的模样，无异于痴人说梦，北京在红宫墙外的宁静小路上，在胡同儿的转弯拐角儿，在国贸的匆匆路旁，也在未名湖边的石砖小径。只有用心去感受，去聆听，才能听到北京的内心独白。 在我的心里，北京表面上它是现代大都会，但是内心却有抹不去的古朴和怀旧。闲庭信步在逐渐少去的胡同里，走进那热气腾腾的涮肉店，那才是真正的北京。 有许多著名的学府如清华、北大等也汇聚于此，可以漫步校园中想象朱自清、胡适等昔日大师在校任教时的情景。 还有许多闻名遐迩的自然景观，如红叶迷人的香山公园、竹林遍地的紫竹院、环境幽雅的玉渊潭……</dd>
+								</dl>
+							</div>
+							<!-- //description -->
+						</div>
+					</div>
+					<!-- //Item -->
+
+
+					<div class="wrap">
+						<ul id="myTabs" class="nav nav-tabs nobottomline" role="tablist">
+							<li role="presentation" class="active"><a href="#one" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">一日游</a></li>
+							<li role="presentation" class=""><a href="#two" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">二日游</a></li>
+							<li role="presentation" class=""><a href="#three" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">三日游</a></li>
+						</ul>
+
+
+						<div id="myTabContent" class="tab-content">
+							<div role="tabpanel" class="tab-pane fade active in" id="one" aria-labelledby="one-tab">
+								<div class="tabdescription">
+									<p>如果只有一天时间，建议只在城区内活动。早上逛逛故宫感受历史，下午在后海边晒晒太阳喝喝茶文艺一下，晚上到三里屯放松心情。</p>
+								</div>
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">故宫</a></div>
+								</div>
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">后海</a></div>
+								</div>
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">三里屯</a></div>
+								</div>
+								<div class="des-route">
+									<dl class="clearfix">
+										<dt>具体介绍</dt>
+										<dd>故宫推荐只走中轴线，大概3个来小时可逛完。从南门进北门出，中午可在景山附近吃个饭。下午沿胡同闲逛至后海，逛累了，随便找一家喜欢的咖啡馆坐在什刹海边晒晒太阳，喝喝茶。后海就在鼓楼附近，鼓楼一带最能体现老北京的味道。晚上去著名的三里屯逛逛。三里屯除了酒吧街还有Village等商业区，Village南区的品牌相对亲民，北区的品牌多为奢侈品。</dd>
+									</dl>
+								</div>
+								<div class="dinning">
+									<dl class="clearfix">
+										<dt>餐饮小吃</dt>
+										<dd>从鼓楼东大街坐107路公交可到簋街。簋街是北京著名的餐饮一条街，街两旁挂满红灯笼，热闹非常。主要有川菜、烤串、馋嘴蛙、香辣蟹、火锅等等。</dd>
+									</dl>
+								</div>
+								<div class="accommodation">
+									<div><strong>住宿旅店</strong></div>
+									<ul>
+										<li>
+											鼓韵青年旅舍</br>
+											地址：北京市西城区旧鼓楼大街51号</br>
+											特色：2011年重新装修过，服务员都是热情的藏族小姑娘！离鼓楼、后海步行只有5-10分钟。</br>
+											价格：单人间170元，二人间240元，三人间260元，四人间65元/人，六人间55元/人。</br> 
+											电话：010-64037702/64039907</br>
+											怎么去：地铁2号线到鼓楼大街站B口出站，往南走300米。
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade" id="two" aria-labelledby="two-tab">
+								<div class="tabdescription">
+									<p>两天时间，感受下传统北京的文化气息和景观特色，逛故宫，南锣鼓巷，天安门广场；也当把北京的时尚达人，去三里屯扫货，去酒吧嗨起来，去簋街吃“夜生活”小吃。</p>
+								</div>
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">天安门广场</a></div>
+								</div>
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">故宫</a></div>
+								</div>
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">南锣鼓巷</a></div>
+								</div>
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">后海</a></div>
+								</div>
+								<div class="des-route">
+									<dl class="clearfix">
+										<dt>具体介绍</dt>
+										<dd>早上在天安门广场看完升旗（升旗时间会根据当时日出的时间变动），在天安门广场感受下世界上最大的城市中心广场，看一看人民英雄纪念碑，人民大会堂，毛主席纪念堂等。横跨长安街，就是故宫博物院了，进入里面参观和感受下当年皇家王朝的文化与恢宏的气势。离开故宫，乘坐公交609，开始闲逛南锣鼓巷了，在里面好好逛下特色小店，体验下时尚与老北京风情巧妙结合后的产物。从南锣鼓巷经过地安门散步到后海，后海是一片有水而能观山，垂柳拂岸的闲散之地，还有很多风情酒吧，很多小有名气的驻唱在那里出没。</dd>
+									</dl>
+								</div>
+								<div class="dinning">
+									<dl class="clearfix">
+										<dt>餐饮小吃</dt>
+										<dd>中午可以选择在南锣鼓巷吃。南锣鼓巷的小吃和各色美食是绝对不能错过的，这里有非常多著名的小吃和店铺。如：文宇奶酪店，小屋披萨，鬼味烤翅等等。 晚上可以选择吃在后海。这里有地道的老北京小吃。爆肚冯，王胖子驴肉火烧，一些烧烤店。</dd>
+									</dl>
+								</div>
+								<div class="accommodation">
+									<div><strong>住宿旅店</strong></div>
+									<div>可以选择在后海附近住宿，快捷酒店是不错的选择。 </div>
+									<ul>
+										<li>
+											锦江之星（北京后海店）</br>
+											地址：北京市西城区德胜门内大街103号</br>
+											电话：010-64058622
+										</li>
+										<li>
+											汉庭快捷（北京后海店）</br>
+											地址：北京市菊儿胡同33号</br> 
+											电话：010-64061188
+										</li>
+									</ul>
+								</div>
+
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">王府井</a></div>
+								</div>
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">三里屯</a></div>
+								</div>
+								<div class="des-route">
+									<dl class="clearfix">
+										<dt>具体介绍</dt>
+										<dd>乘车去往王府井，各种大商场等着你去扫货啦，如果觉得不过瘾，作为时尚潮人的你，可以下午继续赶去三里屯那个大大的时尚商圈继续疯狂逛街购物吧。晚上，吃在三里屯，购在三里屯，喝在三里屯，玩在三里屯。</dd>
+									</dl>
+								</div>
+								<div class="dinning">
+									<dl class="clearfix">
+										<dt>餐饮小吃</dt>
+										<dd>中午吃在王府井，可以选择在各大商场里吃，大众餐饮店应有尽有；也可以去王府井小吃街吃些，地道风味小吃，爆肚，凉粉，鱿鱼串，都能满足你的味蕾。 晚上在三里屯吃些精致的餐馆，也可直奔酒吧一直嗨到午夜，去簋街狂吃一番。</dd>
+									</dl>
+								</div>
+								<div class="accommodation">
+									<div><strong>住宿旅店</strong></div>
+									<div>可以考虑住在团结湖附近，交通便利，配套服务设施也很齐全。</div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade" id="three" aria-labelledby="three-tab">
+								<div class="tabdescription">
+									<p>当你有了三天时间在北京，就可以文艺一把了哦。除了最具代表性的故宫、天安门广场外，在著名的798的看几场展览，去三里屯感受下午夜酒吧，当把时尚潮人，在南锣鼓巷和后海体验下老北京的文艺气息，让心灵享受一趟文艺之旅。</p>
+								</div>
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">天安门广场</a></div>
+								</div>
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">故宫</a></div>
+								</div>
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">南锣鼓巷</a></div>
+								</div>
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">后海</a></div>
+								</div>
+								<div class="des-route">
+									<dl class="clearfix">
+										<dt>具体介绍</dt>
+										<dd>早上在天安门广场看完升旗（升旗时间会根据当时日出的时间变动），在天安门广场感受下世界上最大的城市中心广场，看一看人民英雄纪念碑，人民大会堂，毛主席纪念堂等。横跨长安街，就是故宫博物院了，进入里面参观和感受下当年皇家王朝的文化与恢宏的气势。离开故宫，乘坐公交609，开始闲逛南锣鼓巷了，在里面好好逛下特色小店，体验下时尚与老北京风情巧妙结合后的产物。从南锣鼓巷经过地安门散步到后海，后海是一片有水而能观山，垂柳拂岸的闲散之地，还有很多风情酒吧，很多小有名气的驻唱在那里出没。</dd>
+									</dl>
+								</div>
+								<div class="dinning">
+									<dl class="clearfix">
+										<dt>餐饮小吃</dt>
+										<dd>中午可以选择在南锣鼓巷吃。南锣鼓巷的小吃和各色美食是绝对不能错过的，这里有非常多著名的小吃和店铺。如：文宇奶酪店，小屋披萨，鬼味烤翅等等。 晚上可以选择吃在后海。这里有地道的老北京小吃。爆肚冯，王胖子驴肉火烧，一些烧烤店。</dd>
+									</dl>
+								</div>
+								<div class="accommodation">
+									<div><strong>住宿旅店</strong></div>
+									<div>可以选择在后海附近住宿，快捷酒店是不错的选择。 </div>
+									<ul>
+										<li>
+											锦江之星（北京后海店）</br>
+											地址：北京市西城区德胜门内大街103号</br>
+											电话：010-64058622
+										</li>
+										<li>
+											汉庭快捷（北京后海店）</br>
+											地址：北京市菊儿胡同33号</br> 
+											电话：010-64061188
+										</li>
+									</ul>
+								</div>
+
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">王府井</a></div>
+								</div>
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">三里屯</a></div>
+								</div>
+								<div class="des-route">
+									<dl class="clearfix">
+										<dt>具体介绍</dt>
+										<dd>乘车去往王府井，各种大商场等着你去扫货啦，如果觉得不过瘾，作为时尚潮人的你，可以下午继续赶去三里屯那个大大的时尚商圈继续疯狂逛街购物吧。晚上，吃在三里屯，购在三里屯，喝在三里屯，玩在三里屯。</dd>
+									</dl>
+								</div>
+								<div class="dinning">
+									<dl class="clearfix">
+										<dt>餐饮小吃</dt>
+										<dd>中午吃在王府井，可以选择在各大商场里吃，大众餐饮店应有尽有；也可以去王府井小吃街吃些，地道风味小吃，爆肚，凉粉，鱿鱼串，都能满足你的味蕾。 晚上在三里屯吃些精致的餐馆，也可直奔酒吧一直嗨到午夜，去簋街狂吃一番。</dd>
+									</dl>
+								</div>
+								<div class="accommodation">
+									<div><strong>住宿旅店</strong></div>
+									<div>可以考虑住在团结湖附近，交通便利，配套服务设施也很齐全。</div>
+								</div>
+
+								<div class="route">
+									<div class="routeimg">
+										<img src="images/logo_small.png" height="16" width="16">
+									</div>
+									<div><a href="#">798艺术区</a></div>
+								</div>
+								<div class="des-route">
+									<dl class="clearfix">
+										<dt>具体介绍</dt>
+										<dd>坐车前往798艺术区，体验和感受下艺术家们富有特色的艺术展示和创作作品，798现在有一百多家文化机构，包括出版，建筑设计，服装设计，室内家居设计，音乐演出，影视播放，艺术家工作室等。除了画廊，还有酒吧，餐馆，服装店，书店，瑜珈中心……应有尽有。</dd>
+									</dl>
+								</div>
+								<div class="dinning">
+									<dl class="clearfix">
+										<dt>餐饮小吃</dt>
+										<dd>798艺术区美食很多，光餐馆就有法国的，意大利的，还有川菜。创意蛋糕品牌，ebeecake以其精致的造型，纯正的口感，健康的理念，其独有的情感蜜码赋予蛋糕生命，让人们在享用美味的同时，感受到生命的历程，体会瞬间的幸福。</dd>
+									</dl>
+								</div>
+								<div class="accommodation">
+									<div><strong>住宿旅店</strong></div>
+									<div>798艺术区附近有些快捷酒店可以选择。</div>
+									<ul>
+										<li>
+											7天连锁酒店（北京798艺术区店）</br>
+											地址：北京市朝阳区酒仙桥北路7号（酒仙桥北路与彩虹路交叉口北行200米路东）
+										</li>
+										<li>
+											北京如家798艺术区店</br>
+											地址：北京市朝阳区酒仙桥中路3号
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- //myTabContent -->
+					</div>
+					<!-- //wrap -->
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer" role="contentinfo">
+		<!-- Wrapper -->
+		<div class="wrap">
+			<div class="row">
+				<!-- OneFourth -->
+				<div class="one-fourth">
+					<h6>使用理由</h6>
+					<ul>
+						<li>查询方便</li>
+						<li>内容齐全</li>
+						<li>用户友好</li>
+					</ul>
+				</div>
+				<!-- //OneFourth -->
+				
+				<!-- OneFourth -->
+				<div class="one-fourth">
+					<h6>特色功能</h6>
+					<ul>
+						<li>景点搜索</li>
+						<li>旅行路线</li>
+						<li>周边查询</li>
+					</ul>
+				</div>
+				<!-- //OneFourth -->
+				
+				<!-- OneFourth -->
+				<div class="one-fourth">
+					<h6>联系我们</h6>
+					<ul>
+						<li>提出意见</li>
+						<li>查看更新</li>
+						<li>出谋划策</li>
+					</ul>
+				</div>
+				<!-- //OneFourth -->
+
+				<!-- OneFourth -->
+				<div class="one-fourth">
+					<h6>关于我们</h6>
+					<p>SOA小组</br>
+						成员：魏雅婷、阮俊、淦珺、何煦</br>
+						unawill@126.com</p>
+					</div>
+					<!-- //OneFourth -->
+				</div>
+			</div>
+			<!-- //Wrapper -->
+
+			<div class="copy">
+				<!-- Wrapper -->
+				<div class="wrap">
+					<p>Copyright © 2015-2016 Unawill All Rights Reserved.</p>
+					<p></p>
+				</div>
+				<!-- //Wrapper -->
+			</div>
+		</footer>
+		<!-- //Footer -->	
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="js/jetmenu.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</body>
+	</html>

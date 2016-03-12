@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>whereis near</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="images/logo_small.png" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=75faf6e7e360dbc924c1a45c71799072"></script>
+</head>
+<body>
+	<!-- Header -->
+	<header class="header" role="banner">
+		<div class="wrap">
+			<!-- Logo -->
+			<div href="index.html" title="whereis" class="logo"><span><img src="images/logo.png"></span> whereis</div>
+			<!-- //Logo -->
+
+			<!-- navigation -->
+			<nav class="main-nav" role="navigation">
+				<div class="jetmenu-wrapper">
+					<ul class="jetmenu" id="jetmenu">
+						<li style=""><a href="#" title="Book now" class="search-trigger">景点搜索</a></li>
+						<li style=""><a href="route.html" title="Services">旅行路线</a></li>
+						<li style=""><a href="near.html" title="Contact">周边查询</a></li>
+					</ul>
+				</div>
+				<!-- Search -->
+				<form class="advanced-search" action="searchresult.html" style="display: none;">
+					<div class="wrap">
+						<div >
+							<input type="text" id="keyword" placeholder="Search for...">
+						</div>
+						<div>
+							<input type="submit" id="as-submit" class="button gold full" value="搜索">
+						</div>
+					</div>
+				</form>
+				<!-- //Search -->
+			</nav>
+			<!-- //navigation -->
+		</div>
+	</header>
+	<!-- //Header -->
+
+	<main class="main near" role="main">
+		<form action="#">
+			<div class="wrap">
+				<div >
+					<input type="text" id="keyword" placeholder="Search for...">
+				</div>
+				<div>
+					<input type="submit" id="search" class="button gold full" value="查询">
+				</div>
+			</div>
+		</form>
+		<!-- map -->
+		<div id="allmap"></div>
+		<!-- //map -->
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer" role="contentinfo">
+		<!-- Wrapper -->
+		<div class="wrap">
+			<div class="row">
+				<!-- OneFourth -->
+				<div class="one-fourth">
+					<h6>使用理由</h6>
+					<ul>
+						<li>查询方便</li>
+						<li>内容齐全</li>
+						<li>用户友好</li>
+					</ul>
+				</div>
+				<!-- //OneFourth -->
+				
+				<!-- OneFourth -->
+				<div class="one-fourth">
+					<h6>特色功能</h6>
+					<ul>
+						<li>景点搜索</li>
+						<li>旅行路线</li>
+						<li>周边查询</li>
+					</ul>
+				</div>
+				<!-- //OneFourth -->
+				
+				<!-- OneFourth -->
+				<div class="one-fourth">
+					<h6>联系我们</h6>
+					<ul>
+						<li>提出意见</li>
+						<li>查看更新</li>
+						<li>出谋划策</li>
+					</ul>
+				</div>
+				<!-- //OneFourth -->
+
+				<!-- OneFourth -->
+				<div class="one-fourth">
+					<h6>关于我们</h6>
+					<p>SOA小组</br>
+						成员：魏雅婷、阮俊、淦珺、何煦</br>
+						unawill@126.com</p>
+				</div>
+				<!-- //OneFourth -->
+			</div>
+		</div>
+		<!-- //Wrapper -->
+
+		<div class="copy">
+			<!-- Wrapper -->
+			<div class="wrap">
+				<p>Copyright © 2015-2016 Unawill All Rights Reserved.</p>
+				<p></p>
+			</div>
+			<!-- //Wrapper -->
+		</div>
+	</footer>
+	<!-- //Footer -->	
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/jetmenu.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript">
+		(function(){
+			var map = new BMap.Map("allmap");
+			var pointStack = [];//缓存经纬坐标
+			var $search = document.getElementById('search');
+			map.enableScrollWheelZoom(true);
+
+			$search.onclick = function() {
+				//清空现有小锚点
+				for (var i = 0; i < pointStack.length; ++i){
+					map.removeOverlay(pointStack[i]);
+				}
+				centerAndZoom(116.26844967549,39.992182483805);//以颐和园为中心
+				generatePoints();
+			}
+
+			/**
+			 * 居中显示到对应点
+			 * @param  {[type]} x [description]
+			 * @param  {[type]} y [description]
+			 */
+			 function centerAndZoom(x, y) {
+			 	map.centerAndZoom(new BMap.Point(x, y),15);
+				//生成并缓存锚点
+				pointStack.push(addMarker(x, y,'颐和园'));
+			}
+
+			/**
+			 * 添加小锚点
+			 * @param {[type]} x    [description]
+			 * @param {[type]} y    [description]
+			 * @param {[type]} text 锚点标签
+			 * @return {[type]}   	生成的小猫点
+			 */
+			 function addMarker(x, y, text) {
+				//添加ggmarker和label
+				var markergg = new BMap.Marker(new BMap.Point(x, y));
+			    map.addOverlay(markergg); //添加ggmarker
+			    var labelgg = new BMap.Label(text || '',{offset:new BMap.Size(20,-10)});
+			    markergg.setLabel(labelgg); //添加gglabel
+			    return markergg;
+			}
+
+
+			 function generatePoints() {
+			 	//读取获得的坐标并缓存锚点
+				pointStack.push(addMarker(116.31050076707,39.990292591986,'小红蕃薯(北四环店)'));
+				pointStack.push(addMarker(116.31031095511,39.996504333123,'bamboo西餐厅'));
+				pointStack.push(addMarker(116.31107604191,39.994203498747,'1+1 意面工坊(北大畅春园食街店)'));
+				pointStack.push(addMarker(116.31223000517,39.98849598672,'棒!约翰(苏州街店)'));
+				pointStack.push(addMarker(116.31206696272,39.985994480064,'蜀味浓苏州街店'));
+			}
+
+			centerAndZoom(116.26844967549,39.992182483805);
+			
+		})()
+	</script>
+</body>
+</html>
