@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>whereis searchresult</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="images/logo_small.png" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=75faf6e7e360dbc924c1a45c71799072"></script>
+</head>
+<body>
+	<!-- Header -->
+	<header class="header" role="banner">
+		<div class="wrap">
+			<!-- Logo -->
+			<div href="index.html" title="whereis" class="logo"><span><img src="images/logo.png"></span> whereis</div>
+			<!-- //Logo -->
+
+			<!-- navigation -->
+			<nav class="main-nav" role="navigation">
+				<div class="jetmenu-wrapper">
+					<ul class="jetmenu" id="jetmenu">
+						<li style=""><a href="#" title="Book now" class="search-trigger">景点搜索</a></li>
+						<li style=""><a href="route.html" title="Services">旅行路线</a></li>
+						<li style=""><a href="near.html" title="Contact">周边查询</a></li>
+					</ul>
+				</div>
+				<!-- Search -->
+				<form class="advanced-search" action="searchresult.html" style="display: none;">
+					<div class="wrap">
+						<div >
+							<input type="text" id="keyword" placeholder="Search for...">
+						</div>
+						<div>
+							<input type="submit" id="as-submit" class="button gold full" value="搜索">
+						</div>
+					</div>
+				</form>
+				<!-- //Search -->
+			</nav>
+			<!-- //navigation -->
+		</div>
+	</header>
+	<!-- //Header -->
+
+	<main class="main" role="main">
+		<!-- map -->
+		<div id="allmap"></div>
+		<!-- //map -->
+
+		<section class="white icons">
+			<div class="wrap">
+				<div class="row">
+					<!-- Item -->
+					<div class="one-half wow fadeIn animated" style="visibility: visible; -webkit-animation: fadeIn;">
+						<img width="525" height="295" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://hiphotos.baidu.com/lvpics/pic/item/060828381f30e924a71955904c086e061c95f7d6.jpg"></img>
+					</div>
+					<!-- //Item -->
+
+					<!-- Item -->
+					<div class="one-half wow fadeIn animated" data-wow-delay=".4s" style="visibility: visible; -webkit-animation: fadeIn 0.4s;" id="content">
+						<div class="block-height">
+							<!-- name -->
+							<div class="name">
+								<h3><strong>颐和园</strong></h3>
+							</div>
+							<!-- //name -->
+
+							<!-- abstract -->
+							<div class="abstract">
+								<dl class="clearfix">
+									<dt>印象摘要</dt>
+									<dd>我国现存规模最大、保存最完整的皇家园林，久负盛名。</dd>
+								</dl>
+							</div>
+							<!-- //abstract -->
+
+							<!-- description -->
+							<div class="description">
+								<dl class="clearfix">
+									<dt>景点介绍</dt>
+									<dd>颐和园位于北京西北郊海淀区内，距北京城区15公里，是我国现存规模最大，保存最完整的皇家园林之一，也是享誉世界的旅游胜地之一。 颐和园是利用昆明湖、万寿山为基址，以杭州西湖风景为蓝本，汲取江南园林的某些设计手法和意境而建成的一座大型天然山水园，也是保存得最完整的一座皇家行宫御苑，被誉为皇家园林博物馆。 颐和园景区规模宏大，园内建筑以佛香阁为中心，园中有景点建筑物百余座、大小院落20余处，3555古建筑，面积70000多平方米，共有亭、台、楼、阁、廊、榭等不同形式的建筑3000多间。古树名木1600余株。其中佛香阁、长廊、石舫、苏州街、十七孔桥、谐趣园、大戏台等都已成为家喻户晓的代表性建筑。</dd>
+								</dl>
+							</div>
+							<!-- //description -->
+						</div>
+					</div>
+					<!-- //Item -->
+
+					<!-- Item -->
+					<div class="one-half wow fadeIn animated" data-wow-delay=".4s" style="visibility: visible; -webkit-animation: fadeIn 0.4s;" id="content">
+						<div class="block-height">
+							<!-- price -->
+							<div class="price">
+								<div><strong>票价</strong></div>
+								<ul>
+									<li>
+										旺季（4月1日~10月31日）：30.00元</br>
+										德和园：5.00元</br>
+										佛香阁：10.00元</br> 
+										苏州街：10.00元</br> 
+										文昌院：20.00元</br> 
+										联票（含门票、文昌院、德和园、佛香阁、苏州街澹宁堂）：60.00元
+									</li>
+									<li>
+										淡季（11月1日~3月31日）：20.00元</br> 
+										德和园：5.00元</br> 
+										佛香阁：10.00元</br> 
+										苏州街：10.00元</br> 
+										文昌院：20.00元</br> 
+										联票（含门票、文昌院、德和园、佛香阁、苏州街澹宁堂）：50.00元
+									</li>
+								</ul>
+							</div>
+							<!-- //price -->
+						</div>
+					</div>
+					<!-- //Item -->
+
+					<!-- Item -->
+					<div class="one-half wow fadeIn animated" style="visibility: visible; -webkit-animation: fadeIn;">
+						<img width="525" height="295" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://hiphotos.baidu.com/lvpics/pic/item/10dfa9ec8a136327f6316096918fa0ec09fac7b3.jpg"></img>
+					</div>
+					<!-- //Item -->
+
+					<!-- Item -->
+					<div class="one-half wow fadeIn animated" style="visibility: visible; -webkit-animation: fadeIn;">
+						<img width="525" height="295" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://hiphotos.baidu.com/lvpics/pic/item/0b55b319ebc4b7453122098dcffc1e178b8215f2.jpg"></img>
+					</div>
+					<!-- //Item -->
+
+					<!-- Item -->
+					<div class="one-half wow fadeIn animated" data-wow-delay=".4s" style="visibility: visible; -webkit-animation: fadeIn 0.4s;" id="content">
+						<div class="block-height">
+							<!-- opentime -->
+							<div class="opentime">
+								<div><strong>开放时间</strong></div>
+								<ul>
+									<li>
+										旺季（4月1日~10月31日）：06:30~20:00 停止售票时间：18:00</br> 
+										园中园（含文昌院、德和园、佛香阁、苏州街澹宁堂）：08:30~17:00
+									</li>
+									<li>
+										淡季（11月1日~3月31日）：07:00~19:00 停止售票时间：17:00</br> 
+										园中园（含文昌院、德和园、佛香阁、苏州街澹宁堂）：09:00~18:00
+									</li>
+								</ul>
+								<div class="tel">
+									<dl class="clearfix">
+										<dt>咨询电话</dt>
+										<dd>010-62881144</dd>
+									</dl>
+								</div>
+							</div>
+							<!-- //opentime -->
+						</div>
+					</div>
+					<!-- //Item -->
+
+					<!-- Item -->
+					<div class="one-half wow fadeIn animated" data-wow-delay=".4s" style="visibility: visible; -webkit-animation: fadeIn 0.4s;" id="content">
+						<div class="block-height">
+							<!-- attention -->
+							<div class="attention">
+								<div><strong>[门票优惠政策]</strong></div>
+								<ul>
+									<li>
+										身高1.2米以下儿童免票。
+									</li>
+									<li>
+										北京市65岁以上老年人凭老年证免票；外地70周岁以上（含70周岁）老年人凭有效证件，门票半价优惠。 
+									</li>
+									<li>
+										大、中、小学学生（不含成人教育学生）、外国留学生凭学生证，门票半价优惠。
+									</li>
+									<li>
+										残疾人、离休干部、离休军人、现役军人、武警官兵、省、部级以上劳模凭有效证件免票。 
+									</li>
+									<li>
+										持有社会保障金领取证的人员凭有效证件，门票半价优惠。 
+									</li>
+								</ul>
+							</div>
+							<!-- //attention -->
+						</div>
+					</div>
+					<!-- //Item -->
+
+					<!-- Item -->
+					<div class="one-half wow fadeIn animated" style="visibility: visible; -webkit-animation: fadeIn;">
+						<img width="525" height="295" src="http://webmap1.map.bdimg.com/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://hiphotos.baidu.com/lvpics/pic/item/a5c27d1ed21b0ef4525e26c5ddc451da80cb3ef2.jpg"></img>
+					</div>
+					<!-- //Item -->
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<!-- Footer -->
+	<footer class="footer" role="contentinfo">
+		<!-- Wrapper -->
+		<div class="wrap">
+			<div class="row">
+				<!-- OneFourth -->
+				<div class="one-fourth">
+					<h6>使用理由</h6>
+					<ul>
+						<li>查询方便</li>
+						<li>内容齐全</li>
+						<li>用户友好</li>
+					</ul>
+				</div>
+				<!-- //OneFourth -->
+				
+				<!-- OneFourth -->
+				<div class="one-fourth">
+					<h6>特色功能</h6>
+					<ul>
+						<li>景点搜索</li>
+						<li>旅行路线</li>
+						<li>周边查询</li>
+					</ul>
+				</div>
+				<!-- //OneFourth -->
+				
+				<!-- OneFourth -->
+				<div class="one-fourth">
+					<h6>联系我们</h6>
+					<ul>
+						<li>提出意见</li>
+						<li>查看更新</li>
+						<li>出谋划策</li>
+					</ul>
+				</div>
+				<!-- //OneFourth -->
+
+				<!-- OneFourth -->
+				<div class="one-fourth">
+					<h6>关于我们</h6>
+					<p>SOA小组</br>
+						成员：魏雅婷、阮俊、淦珺、何煦</br>
+						unawill@126.com</p>
+					</div>
+					<!-- //OneFourth -->
+				</div>
+			</div>
+			<!-- //Wrapper -->
+
+			<div class="copy">
+				<!-- Wrapper -->
+				<div class="wrap">
+					<p>Copyright © 2015-2016 Unawill All Rights Reserved.</p>
+					<p></p>
+				</div>
+				<!-- //Wrapper -->
+			</div>
+		</footer>
+		<!-- //Footer -->	
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="js/jetmenu.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+
+		<script type="text/javascript">
+			(function(){
+				var map = new BMap.Map("allmap");
+				map.centerAndZoom(new BMap.Point(116.331398,39.897445),14);
+				map.enableScrollWheelZoom(true);
+				map.clearOverlays();
+				var new_point = new BMap.Point(116.031398,39.897445);
+				var marker = new BMap.Marker(new_point);
+				map.addOverlay(marker);
+				map.panTo(new_point);
+			})()
+		</script>
+
+	</body>
+	</html>
